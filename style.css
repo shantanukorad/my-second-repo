@@ -1,0 +1,170 @@
+ :root {
+     /* Color Palette Archetypes */
+     --bg-void: #030712;
+     --bg-card: #0b0f19;
+     --bg-field: #111827;
+     --accent: #38bdf8;
+     --accent-glow: rgba(56, 189, 248, 0.12);
+     --border-inactive: #1f2937;
+     --text-primary: #f3f4f6;
+     --text-secondary: #9ca3af;
+
+ }
+
+ * {
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+ body {
+     background-color: var(--bg-void);
+     font-family: system-ui, -apple-system, sans-serif;
+
+ }
+
+ header{
+    display: flex;
+    position: fixed;
+    width: 100%;
+     height: 90px;
+     border-bottom: 1px solid #1F2937;
+     align-items: center;
+     justify-content: space-between;
+     backdrop-filter: blur(20px);
+
+ }
+
+ header div p {
+     color: var(--text-primary);
+     font-size: 1.55rem;
+     margin-left: 70px;
+     font-weight: 800;
+     letter-spacing: 0;
+ }
+ header div p span {
+    color: var(--accent);
+ }
+ header div a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-weight: 500;
+    
+ }
+ header div>a:hover{
+    color: var(--accent);
+ }
+ .abc{
+    margin-right: 70px;
+ }
+ .a{
+    margin-right: 35px;
+ }
+ main>article{
+   background-color: #070B16;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   width: 800px;
+   margin: auto;
+   height: 450px;
+   margin-top: -30px;
+   border: 1px solid #11151F;
+   border-radius: 30px;
+   padding: 70px;
+ }
+ main article>h1{
+   text-align: center;
+   font-size: 3.6rem;
+   color: var(--text-primary);
+   font-weight: 800;
+ }
+ main article>p{
+   text-align: center;
+   font-size: 1.2rem;
+   color: var(--text-secondary);
+ }
+ main article>a{
+   text-decoration: none;
+   background-color: var(--text-primary);
+   color: var(--bg-void);
+   margin: auto;
+   height: 70px;
+   width: 250px;
+   padding: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-size: 1.2rem;
+   border-radius: 20px;
+ }
+ main article>a:hover{
+  box-shadow: 10px 10px 40px darkblue;
+ }
+main h2{
+   color: var(--text-primary);
+   position: relative;
+   left: 430px;
+   font-size: 2.5rem;
+   margin-bottom: 20px;
+}
+main div{
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   margin-bottom: 30px;
+
+}
+main div article{
+   position: relative;
+   border: 1px solid var(--border-inactive);
+   background-color: #0B0F19;
+   width: 370px;
+   height: 420px;
+   border-radius: 30px;
+}
+main div article:hover{
+   animation-name: abcd;
+   transition-duration: 3s;
+
+}
+/* @abcd {
+   0%{
+      transform: translate(-20px,-20px);
+   }
+   100%{
+      transform: translate(-20px,-20px);
+
+   }
+} */
+main div article h3{
+   color: var(--text-primary);
+   font-size: 2rem;
+}
+footer{
+   color: var(--text-primary);
+   font-size: 1.1rem;
+   margin-bottom: 3px;
+}
+main div article p{
+   color: var(--text-secondary);
+}
+main div article span{
+   position: absolute;
+   color: var(--accent);
+   border: 1px solid var(--accent);
+   background-color: var(--accent-glow);
+   bottom: 50px;
+   left: 30px;
+   height: 40px;
+   width: 140px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 30px;
+}
+.ab{
+   font-size: 45px;
+
+}
